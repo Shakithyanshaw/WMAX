@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:textAlignment="center"
+        tools:context=".MainActivity"
+        tools:textAlignment="center">
+
+        <View
+            android:id="@+id/big_orangeBox"
+            android:layout_width="117dp"
+            android:layout_height="117dp"
+            android:background="#CCFF6100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <View
+            android:id="@+id/small_orangeBox"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="272dp"
+            android:layout_marginBottom="519dp"
+            android:background="#F6AB22"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.987"
+            app:layout_constraintStart_toEndOf="@+id/big_orangeBox"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="148dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginBottom="542dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/small_orangeBox"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/image_1" />
+
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="867dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.003"
+            app:srcCompat="@drawable/doorbell" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="168dp"
+            android:layout_marginBottom="764dp"
+            android:text="Notifications"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="96dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="781dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginBottom="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <ListView
+            android:id="@+id/notification"
+            android:layout_width="336dp"
+            android:layout_height="544dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="201dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="212dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textAlignment="center" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

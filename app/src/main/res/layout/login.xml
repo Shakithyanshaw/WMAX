@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:textAlignment="center"
+    tools:context=".MainActivity"
+    tools:textAlignment="center">
+
+
+    <View
+        android:id="@+id/big_orangeBox"
+        android:layout_width="117dp"
+        android:layout_height="117dp"
+        android:background="#CCFF6100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <View
+        android:id="@+id/small_orangeBox"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="519dp"
+        android:background="#F6AB22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toEndOf="@+id/big_orangeBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="49dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="53dp"
+            android:layout_marginBottom="268dp"
+            android:src="@drawable/pro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/username"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="277dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="180dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="username"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/small_orangeBox"
+            app:layout_constraintVertical_bias="0.612" />
+
+        <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="49dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="180dp"
+        android:src="@drawable/passw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/small_orangeBox"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="258dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="180dp"
+        android:ems="10"
+        android:inputType="text|textPassword|textAutoComplete|textAutoCorrect|textCapCharacters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="239dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/small_orangeBox"
+        app:srcCompat="@drawable/image_1" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="199dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="196dp"
+            android:layout_marginBottom="116dp"
+            android:backgroundTint="#FF5722"
+            android:button="@android:drawable/dialog_frame"
+            android:text="Remember Me"
+            android:textAlignment="viewStart"
+            android:textColorHighlight="#FF5722"
+            android:textColorLink="#FF5722"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Password"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+        android:id="@+id/button4"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="61dp"
+        android:backgroundTint="#FF774C"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="#000000"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="166dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="15dp"
+            android:text="Forgot Password"
+            android:textColor="#2196F3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkBox"
+            app:layout_constraintTop_toBottomOf="@+id/Password"
+            tools:textAlignment="center" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
